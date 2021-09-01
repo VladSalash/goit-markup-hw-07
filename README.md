@@ -1,2 +1,2 @@
-# goit-markup-hw-07
-dz7
+# goit-markup-hw-01
+репозиторий для дз

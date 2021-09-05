@@ -1,0 +1,121 @@
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--border-color);
+  }
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .main-nav {
+    display: flex;
+    align-items: center;
+  }
+  .logo-header-link {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--logo-second-color);
+    text-decoration: none;
+    margin-right: 93px;
+    margin-left: 0;
+    color: #2196f3;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .logo-color {
+    color: var(--logo-second-color);
+  }
+  .site-nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  .scroll-link{
+    position:relative;
+      
+      transition: color 250ms var(--cubic);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      color: var(--secondary-font-color);
+      letter-spacing: 0.02em;
+      padding-top: 32px;
+      padding-bottom: 32px;
+  }
+  .current {
+    color: var(--link-hover-focus);
+  }
+  
+    .scroll-link.current::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    
+    background-color: var(--link-hover-focus);
+    opacity: 1;
+    transition: opasity 250ms var(--cubic);
+    }
+  
+    .nav-item:not(:last-child) {
+      margin-right: 50px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      color: #212121;
+    }
+    .nav-item .scroll-link:hover,
+    .nav-item .scroll-link:focus {
+      color: var(--link-hover-focus);
+    }
+  
+  .nav-item:not(:first-child) {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    text-decoration: none;
+  }
+  
+  .auth-nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  .auth-nav-item:not(:first-child) {
+    margin-left: 50px;
+  }
+  
+  .auth-nav-item:hover,
+  .auth-nav-item:focus {
+    color: var(--link-hover-focus);
+  }
+  .mail-link-current {
+    color: #2196f3;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .auth-nav .nav-item + .nav-item {
+    margin-left: 50px;
+  }
+  .auth-nav-icon{
+    fill:currentColor;
+    margin-right: 10px;
+  
+  }
+  

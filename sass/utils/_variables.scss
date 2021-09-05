@@ -1,0 +1,25 @@
+:root {
+    --primary-font: "Roboto", sans-serif;
+    --secondary-font: "Raleway", sans-serif;
+    --primary-font-color: #757575;
+    --secondary-font-color: #212121;
+    --logo-accent-color: #2196f3;
+    --logo-second-color: #000000;
+    --our-team-bgr: #f5f4fa;
+    --logo-footer-color: #ffffff;
+    --link-hover-focus: #2196f3;
+    --border-color: #ececec;
+    --box-shadov: 0px 1px 3px rgb(0, 0, 0, 0.12), 0px 1px 1px rgb(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    --btn-shadow: 0px 4px 4px rgb(0, 0, 0, 0.15);
+    --footer-link-color: rgba(255, 255, 255, 0.6);
+    --footer-bgr: #2f303a;
+    --main-letter-spacing: 0.03em;
+    --main-font-size: 14px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+    --font-weight-secondary: bold;
+  
+  }

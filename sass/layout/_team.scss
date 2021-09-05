@@ -1,0 +1,97 @@
+.our-team {
+    background: var(--our-team-bgr);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.Team-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: var(--main-letter-spacing);
+  color: var(--secondary-font-color);
+  margin-bottom: 50px;
+}
+.team-list {
+  display: flex;
+  list-style: none;
+  margin-top: 50px; 
+  
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+.team-item {
+  background: var(--logo-footer-color);
+    width: 270px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.20);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-box {
+  width: 270px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+    text-align: center;
+    background: var(--logo-footer-color);
+    border-radius: 0px 0px 4px 4px;
+}
+.Name {
+  font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: var(--main-letter-spacing);
+    color: var(--secondary-font-color);
+    margin-bottom: 10px;
+}
+
+.specialty {
+  font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: var(--main-letter-spacing);
+    color: var(--primary-font-color);
+    margin-bottom: 16px;
+}
+.team-list-icon{
+  justify-content: center;
+  display: flex;
+  list-style: none;
+  margin-top: 10px;
+  
+}
+.team-list-icon-item{
+  width: 44px;
+  height: 44px;
+
+}
+.team-icon{
+  fill: currentColor;
+
+}
+.team-list-icon-item:not(:last-child){
+  margin-right:10px;
+}
+.team-list-icon-item-link{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+  border-radius: 50px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-list-icon-item-link:hover,
+.team-list-icon-item-link:focus{
+  background-color: #2196f3;
+  color: #ffffff;
+}

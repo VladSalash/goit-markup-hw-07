@@ -1,0 +1,38 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+
+a {
+  text-decoration: none;
+}
+.list{
+  list-style: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+img {
+  display: block;
+}
+body {
+  font-family: var(--primacy-font), "Open-sans", sans-serif;
+  color: var(--primary-font-color);
+}

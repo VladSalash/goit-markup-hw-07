@@ -21,7 +21,8 @@
   
   .overlay-content{
     display: block;
-    
+    width: 370px;
+    height: 405px;
   }
   
   .overlay-content:hover .projects-overlay,
@@ -93,6 +94,10 @@
     color: var(--primacy-font-color);
   }
   
-  
+  .card-description{
+    width: 322px;
+    height: 70px;
+    margin: 20px 0 20px 24px;
+  }
   
   /*END PORTFOLIO*/

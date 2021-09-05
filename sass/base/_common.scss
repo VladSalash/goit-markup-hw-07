@@ -33,6 +33,8 @@ img {
   display: block;
 }
 body {
-  font-family: var(--primacy-font), "Open-sans", sans-serif;
+  font-family:  "Roboto", sans-serif;
+    --secondary-font: "Raleway", sans-serif;
+  /* font-family: var(--primacy-font); */
   color: var(--primary-font-color);
 }

@@ -1,0 +1,32 @@
+// BASE
+
+@import"./base/common";
+@import"./base/container";
+
+// COMPONENTS
+
+@import"./components/backdrop";
+@import"./components/hero-button";
+@import"./components/modal-window";
+@import"./components/modal-form";
+@import"./components/btn-portfolio";
+@import"./components/pop-up-btn-portfolio";
+
+// LAYOUT
+
+@import"./layout/hero";
+@import"./layout/header";
+@import"./layout/description";
+@import"./layout/what-we-do";
+@import"./layout/team";
+@import"./layout/loyal-customers";
+@import"./layout/footer";
+@import"./layout/header-portfolio";
+@import"./layout/filter-portfolio";
+@import"./layout/portfolio";
+@import"./layout/footer-portfolio";
+
+// UTILS
+
+@import"./utils/variables";
+@import"./utils/visually-hidden";

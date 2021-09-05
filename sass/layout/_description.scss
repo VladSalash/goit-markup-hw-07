@@ -10,10 +10,10 @@
   }
   .description-item{
     width: 270px; 
-  height:251px ; 
-  }
-  .description-item:not(:last-child) {
+  height:251px ;
+  & :not(:last-child) {
     margin-right: 30px;
+  }
   }
   
   

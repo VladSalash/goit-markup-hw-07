@@ -94,7 +94,13 @@
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
     fill: var(--logo-footer-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  &:hover,
+  &:focus {
+    background-color: var(--link-hover-focus);
+  }
+  }
   .footer-icon{
     width: 44px;
     height: 44px;
@@ -106,10 +112,7 @@
       align-content: center;
       justify-content: center;
   }
-  .footer-list-icon-item-link:hover,
-  .footer-list-icon-item-link:focus {
-    background-color: var(--link-hover-focus);
-  }
+  
   
   
   

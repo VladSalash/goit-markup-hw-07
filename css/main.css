@@ -120,8 +120,8 @@ body {
 
 .modal-close-icon {
   position: absolute;
-  top: 6px;
-  right: 6px;
+  top: 5.2px;
+  right: 5.1px;
   fill: var(--secondary-font-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -172,6 +172,7 @@ body {
 .form-label textarea {
   margin: 0;
   padding: 11px 12px;
+  margin-bottom: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
@@ -180,7 +181,8 @@ body {
   position: absolute;
   top: 50%;
   left: 12px;
-  display: inline-block;
+  transform: translateY(-50%);
+  display: block;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -192,6 +194,7 @@ body {
 .comment {
   width: 448px;
   height: 120px;
+  resize: none;
 }
 
 .form-label:focus-within .comment,
@@ -209,6 +212,10 @@ body {
   letter-spacing: 0.01em;
 }
 
+.modal-form-input-wrapper {
+  resize: none;
+}
+
 .form-label .form-input::placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-weight: 400;
@@ -218,14 +225,17 @@ body {
 }
 
 /* checkbox */
-.checkbox-input:checked + .checkbox-label::before {
-  background-image: url(../images/icons/iconcheck.svg);
-  width: 16px;
-  height: 16px;
-}
-
-.checkbox-input:focus + .checkbox-label::before {
-  outline: 2px solid var(--link-hover-focus);
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 20px;
+  line-height: 24px;
+  margin-left: 13px;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  color: var(--primary-font-color);
+  text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1), 5px rgba(0, 0, 0, 0.05);
 }
 
 .checkbox-label::before {
@@ -238,17 +248,14 @@ body {
   margin-right: 10px;
 }
 
-.checkbox-label {
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-  margin-top: 20px;
-  line-height: 24px;
-  margin-left: 13px;
-  letter-spacing: 0.03em;
-  border-radius: 4px;
-  color: var(--primary-font-color);
-  text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1), 5px rgba(0, 0, 0, 0.05);
+.checkbox-input:checked + .checkbox-label::before {
+  background-image: url(../images/icons/iconcheck.svg);
+  width: 16px;
+  height: 16px;
+}
+
+.checkbox-input:focus + .checkbox-label::before {
+  outline: 2px solid var(--link-hover-focus);
 }
 
 .form-label-link {
@@ -319,6 +326,12 @@ body {
   border-radius: 4px;
   border-color: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pop-up-btn:hover, .pop-up-btn:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.8), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .hero {
@@ -493,7 +506,7 @@ body {
   height: 251px;
 }
 
-.description-item:not(:last-child) {
+.description-item :not(:last-child) {
   margin-right: 30px;
 }
 
@@ -704,17 +717,15 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.loyal-customers-list-item-link:focus,
-.loyal-customers-list-item-link:hover {
-  fill: var(--link-hover-focus);
-  border: 1px solid var(--link-hover-focus);
-}
-
-.loyal-customers-list-item-link:hover,
-.loyal-customers-list-item-link:focus {
+.loyal-customers-list-item-link:hover, .loyal-customers-list-item-link:focus {
   color: #2196f3;
   border-color: #2196f3;
   outline: none;
+}
+
+.loyal-customers-list-item-link:focus, .loyal-customers-list-item-link:hover {
+  fill: var(--link-hover-focus);
+  border: 1px solid var(--link-hover-focus);
 }
 
 .loyal-customers-title {
@@ -828,6 +839,10 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-list-icon-item-link:hover, .footer-list-icon-item-link:focus {
+  background-color: var(--link-hover-focus);
+}
+
 .footer-icon {
   width: 44px;
   height: 44px;
@@ -839,11 +854,6 @@ body {
   height: 20px;
   align-content: center;
   justify-content: center;
-}
-
-.footer-list-icon-item-link:hover,
-.footer-list-icon-item-link:focus {
-  background-color: var(--link-hover-focus);
 }
 
 .footer-form-cont {
@@ -1008,15 +1018,8 @@ body {
   margin-bottom: 50px;
 }
 
-.filtr-item:not(:last-child) {
+.filtr-menu-list:not(:last-child) {
   margin-right: 8px;
-}
-
-.pop-up-btn:hover,
-.pop-up-btn:focus {
-  color: #ffffff;
-  background-color: #2196f3;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.8), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*PORTFOLIO*/

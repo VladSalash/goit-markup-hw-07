@@ -10,12 +10,13 @@
   
   
   .loyal-customers-list-item{
-  
-  margin-right: 30px;
-  }
-  .loyal-customers-list-item:not(:last-child){
+    margin-right: 30px;
+    
+    &:not(:last-child){
     margin-right: 30px;
   }
+  }
+  
   .loyal-customers-list-item-link{
     display: flex;
     align-items: center;
@@ -27,19 +28,17 @@
     box-sizing: border-box;
     border-radius: 4px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .loyal-customers-list-item-link:focus,
-  .loyal-customers-list-item-link:hover {
-    fill: var(--link-hover-focus);
-    border: 1px solid var(--link-hover-focus);
-  }
-  
-  .loyal-customers-list-item-link:hover,
-  .loyal-customers-list-item-link:focus{
+     &:hover,
+  &:focus{
     color: #2196f3;
     border-color: #2196f3;
     outline: none;
+  }
+  &:focus,
+  &:hover {
+    fill: var(--link-hover-focus);
+    border: 1px solid var(--link-hover-focus);
+    }
   }
   .loyal-customers-title{
     font-size: 36px;

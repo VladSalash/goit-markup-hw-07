@@ -8,18 +8,13 @@
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
-  }
-  
-  .filtr-item:not(:last-child) {
+    
+    &:not(:last-child) {
     margin-right: 8px;
   }
-  
-  .pop-up-btn:hover,
-  .pop-up-btn:focus {
-    color: #ffffff;
-    background-color: #2196f3;  
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.10), 0px 1px 2px rgba(0, 0, 0,  0.8), 0px 2px 2px rgba(0, 0, 0,  0.12)
   }
+  
+  
   
   
   

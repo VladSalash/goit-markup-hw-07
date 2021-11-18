@@ -21,10 +21,13 @@
     width: 370px;
     height: 294px;
     margin-right: 30px;
+
+    &:nth-child(3n) {
+      margin-right: 0px;
+    }
+    
   }
-  .performans-list-item:nth-child(3n) {
-    margin-right: 0px;
-  }
+  
   
   .performans-title{
     position: 

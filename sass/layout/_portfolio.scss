@@ -70,15 +70,8 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-
-.projects-list__card-paragraph {
-  color: var(--primary-font-color);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-  margin: 0;
+.projects-list__card-description{
+  padding: 20px 0px 20px 24px;
 }
 
 .projects-list__card-title {
@@ -87,21 +80,18 @@
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-font-color);
-
   margin-bottom: 4px;
 }
 
-// .projects-list-descr {
-//   font-size: 16px;
-//   line-height: 1.87;
-//   letter-spacing: var(--main-letter-spacing);
-//   color: var(--primacy-font-color);
-// }
-
 .projects-list__card-paragraph {
-  width: 322px;
-  height: 70px;
-  margin: 20px 0 20px 24px;
+  // width: 322px;
+  // height: 70px;
+  color: var(--primary-font-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  margin: 0;
 }
 
 /*END PORTFOLIO*/
